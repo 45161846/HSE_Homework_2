@@ -9,6 +9,5 @@ sealed class ScreenState{
     data class ImageQR(
         val image: Bitmap,
         val qrcode: Bitmap
-    ): ScreenState()
-
+    ) : ScreenState()
 }

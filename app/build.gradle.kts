@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.hse_homework_2"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.hse_homework_2"
@@ -55,6 +55,13 @@ dependencies {
     implementation("io.coil-kt.coil3:coil-compose:3.0.4")
     implementation("io.coil-kt.coil3:coil-network-okhttp:3.0.4")
 
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.6.0")
+    androidTestImplementation("androidx.test.espresso:espresso-accessibility:3.6.1")
+    androidTestImplementation("androidx.test:runner:1.6.1")
+    androidTestImplementation("androidx.test:rules:1.6.1")
+    implementation ("com.google.mlkit:barcode-scanning:17.3.0")
+    androidTestImplementation("androidx.test.uiautomator:uiautomator:2.3.0")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -67,7 +74,6 @@ dependencies {
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
