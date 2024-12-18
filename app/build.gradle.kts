@@ -48,7 +48,7 @@ android {
         }
     }
     adbOptions {
-        timeOutInMs = 30 * 1000
+        timeOutInMs = 30 * 60 * 1000
     }
 }
 
