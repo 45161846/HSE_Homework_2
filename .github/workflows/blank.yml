@@ -105,9 +105,3 @@ jobs:
             chmod 777 emulator.log                # allow writing to log file
             adb logcat >> emulator.log &          # pipe all logcat messages into log file as a background process
             ./gradlew connectedDebugAndroidTest
-      - name: Upload results
-        if: ${{ always() }}
-        uses: actions/upload-artifact@v3
-        with:
-          name: ${{ matrix.api-level }}-${{ matrix.arch }}-instrumentation-test-results
-          path: |
