@@ -47,6 +47,10 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
+    installation{
+        timeOutInMs = 30 * 1000
+    }
 }
 
 dependencies {
